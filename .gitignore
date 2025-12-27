@@ -1,0 +1,31 @@
+# User requested exclusions
+*.excalidraw
+env.txt
+NEON_DATABASE_SETUP_GUIDE.md
+
+# Application specific
+node_modules/
+.next/
+dist/
+out/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Dependencies
+bun.lockb
+yarn.lock
+package-lock.json
+# Keep lockfiles if you want to enforce versions, but usually one is enough. 
+# Depending on your preference, uncomment above if you don't want them.
+# I will leave them commented out as they are usually good to commit.
+
+# OS config
+.DS_Store
+Thumbs.db
