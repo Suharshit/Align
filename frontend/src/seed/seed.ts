@@ -1,5 +1,5 @@
-import { db } from './db';
-import { prompts, type NewPrompt } from './schema';
+import { db } from '../lib/db';
+import { prompts, type NewPrompt } from '../lib/schema';
 
 // EDIT THIS ARRAY TO ADD YOUR PROMPTS
 const promptsToSeed: NewPrompt[] = [
@@ -35,7 +35,7 @@ const promptsToSeed: NewPrompt[] = [
     },
 
     // FOUNDATION - FOUNDER
-    
+
     {
         promptText: 'What is your team currently building?',
         targetRole: 'FOUNDER',
@@ -117,7 +117,7 @@ const promptsToSeed: NewPrompt[] = [
     },
 
     // CLOSURE — SYSTEM
-    
+
     {
         promptText: 'Does this conversation feel aligned enough to continue outside Align?',
         targetRole: 'STUDENT',

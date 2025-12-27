@@ -1,12 +1,12 @@
-import { db } from './db';
+import { db } from '../lib/db';
 import {
     users,
     studentProfiles,
     founderProfiles,
     conversations,
     type NewUser
-} from './schema';
-import { getNextPrompt, submitResponse } from './csm';
+} from '../lib/schema';
+import { getNextPrompt, submitResponse } from '../lib/csm';
 import { eq } from 'drizzle-orm';
 
 /**
