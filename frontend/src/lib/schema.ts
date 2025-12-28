@@ -19,7 +19,7 @@ export const ownerTypeEnum = pgEnum('owner_role', [
   'FOUNDER',
 ]);
 
-export const conversationStatusEnum = pgEnum('conversation_status',  [
+export const conversationStatusEnum = pgEnum('conversation_status', [
   'PENDING',
   'ACTIVE',
   'CLOSED',
@@ -134,6 +134,7 @@ export const conversations = pgTable('conversations', {
 
   startedAt: timestamp('started_at'),
   closedAt: timestamp('closed_at'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
 // Conversation Response
