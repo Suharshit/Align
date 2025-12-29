@@ -137,6 +137,14 @@ export const conversations = pgTable('conversations', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
+// Waitlist
+
+export const waitlist = pgTable('waitlist', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  email: text('email').notNull().unique(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
 // Conversation Response
 
 export const conversationResponses = pgTable('conversation_responses', {
@@ -178,3 +186,6 @@ export type NewConversation = typeof conversations.$inferInsert;
 
 export type ConversationResponse = typeof conversationResponses.$inferSelect;
 export type NewConversationResponse = typeof conversationResponses.$inferInsert;
+
+export type Waitlist = typeof waitlist.$inferSelect;
+export type NewWaitlist = typeof waitlist.$inferInsert;

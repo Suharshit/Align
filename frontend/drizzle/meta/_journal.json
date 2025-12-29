@@ -8,6 +8,13 @@
       "when": 1766852064966,
       "tag": "0000_lethal_silvermane",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1766998103944,
+      "tag": "0001_blue_giant_man",
+      "breakpoints": true
     }
   ]
 }
