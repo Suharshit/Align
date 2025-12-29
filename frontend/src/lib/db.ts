@@ -6,11 +6,11 @@ import * as schema from './schema';
 const connectionString = process.env.DATABASE_URL;
 
 if (!connectionString) {
-  throw new Error('DATABASE_URL environment variable is not set');
+  console.warn('DATABASE_URL environment variable is not set. Database features will fail.');
 }
 
 // Create the Neon HTTP client
-const sql = neon(connectionString);
+const sql = neon(connectionString || 'postgres://user:pass@host/db');
 
 // Create the Drizzle database instance
 export const db = drizzle(sql, { schema });
