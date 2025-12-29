@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function Navbar() {
@@ -10,7 +11,10 @@ export function Navbar() {
     return (
         <nav className="flex items-center justify-between py-6 px-1 max-w-7xl mx-auto">
             <Link href="/marketing" className="text-2xl font-bold font-logo text-brand-dark">
-                Align
+                <span className='flex items-center gap-3'>
+                    <Image src="/logo icons/Align icon.svg" alt="Align Icon" width={54} height={20} />
+                    Align
+                </span>
             </Link>
             <button
                 onClick={scrollToWaitlist}
