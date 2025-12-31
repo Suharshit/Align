@@ -20,12 +20,11 @@ export default function MarketingPage() {
                     </h1>
 
                     {/* Subtext */}
+                    <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl leading-relaxed mb-4">
+                        Align is a calm space where students and founders clarify intent before hiring conversations begin.
+                    </p>
                     <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl leading-relaxed mb-12">
-                        Align is a structured conversation space where
-                        <br />
-                        intent matters more than performance. No mass
-                        <br />
-                        applications. No rushed decisions.
+                        No resumes. No mass applications. Conversation is earned — not rushed.
                     </p>
 
                     {/* Waitlist Form */}
@@ -34,15 +33,16 @@ export default function MarketingPage() {
             </section>
 
             {/* SECTION 2: Comparison */}
-            <section className="min-h-screen w-full snap-start flex flex-col justify-center items-center px-8 bg-brand-beige">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12 w-full max-w-5xl">
+            {/* SECTION 2: Comparison */}
+            <section className="min-h-screen w-full snap-start flex flex-col justify-center px-8 bg-brand-beige max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12 w-full">
                     {/* For Students */}
                     <div className="flex flex-col gap-6">
                         <h3 className="text-brand-orange text-sm tracking-wider uppercase font-medium">
                             For Students
                         </h3>
                         <p className="text-xl md:text-3xl text-brand-dark leading-snug font-light">
-                            You are asked to pretend you know everything, sending hundreds of applications into a void, hoping for speed instead of fit.
+                            You’re expected to sound confident before you’re clear. You apply broadly, perform constantly, and hope speed will compensate for fit. Align gives you space to slow down — to express what you want to learn, what kind of work excites you, and what environments help you grow before entering a hiring conversation.
                         </p>
                     </div>
 
@@ -52,26 +52,27 @@ export default function MarketingPage() {
                             For Founders
                         </h3>
                         <p className="text-xl md:text-3xl text-brand-dark leading-snug font-light">
-                            You receive vague resumes that hide the truth, leading to misalignment, heavy training burdens, and the feeling that you’re hiring a role, not a person.
+                            You review polished resumes that reveal very little. Misalignment shows up later — in onboarding, training, and churn. Align helps you see intent early: what someone wants to work on, how they think about growth, and whether the direction actually fits before investing your time.
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* SECTION 3: Philosophy */}
-            <section className="min-h-screen w-full snap-start flex flex-col justify-center items-center px-8 bg-brand-dark text-white">
-                <div className="max-w-5xl w-full flex flex-col gap-2">
+            {/* SECTION 3: Philosophy */}
+            <section className="min-h-screen w-full snap-start flex flex-col justify-center bg-brand-dark text-white">
+                <div className="max-w-7xl mx-auto w-full flex flex-col gap-2 px-8">
                     <p className="text-3xl md:text-5xl font-medium leading-tight">
-                        Structured conversation over performance.
+                        Clarity before conversation.
                     </p>
                     <p className="text-3xl md:text-5xl font-medium leading-tight">
                         Intent before evaluation.
                     </p>
                     <p className="text-3xl md:text-5xl font-medium leading-tight">
-                        Calm over chaos.
+                        Structure before speed.
                     </p>
                     <p className="text-3xl md:text-5xl font-medium leading-tight">
-                        Alignment over volume.
+                        Alignment before volume.
                     </p>
                 </div>
             </section>
@@ -85,11 +86,20 @@ export default function MarketingPage() {
                         <h2 className="text-4xl md:text-5xl font-medium mb-4">
                             What Align Is
                         </h2>
-                        <ul className="flex flex-col gap-3 text-xl md:text-2xl font-light text-brand-dark/80">
-                            <li>Not a Job Board.</li>
-                            <li>Not a fast-hiring platform.</li>
-                            <li>A conversation space before pressure begins.</li>
-                        </ul>
+                        <div className="flex flex-col gap-4 text-xl md:text-2xl font-light text-brand-dark/80">
+                            <p>Not a job board.</p>
+                            <p>Not a fast-hiring platform.</p>
+                            <p>
+                                A calm system that helps students and founders
+                                <br />
+                                clarify intent <span className="font-medium text-brand-dark">before</span> hiring conversations begin.
+                            </p>
+                            <p>
+                                Designed to reduce noise early —
+                                <br />
+                                so conversations happen only when they matter.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Waitlist Form Block */}
