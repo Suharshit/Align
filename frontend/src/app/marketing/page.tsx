@@ -6,7 +6,7 @@ export default function MarketingPage() {
         <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory bg-brand-beige text-brand-dark font-sans scroll-smooth">
 
             {/* SECTION 1: Hero */}
-            <section className="relative min-h-screen w-full snap-start flex flex-col px-8 max-w-7xl mx-auto pt-24 md:pt-0">
+            <section className="relative min-h-screen w-full snap-start flex flex-col px-8 max-w-7xl mx-auto pt-32">
                 <div className="absolute top-0 left-0 w-full mt-6 px-8 box-border z-10">
                     <Navbar />
                 </div>
@@ -78,47 +78,48 @@ export default function MarketingPage() {
             </section>
 
             {/* SECTION 4: value + Waitlist */}
-            <section id="waitlist-section" className="relative min-h-screen w-full snap-start flex flex-col justify-center px-8 bg-brand-beige text-brand-dark max-w-7xl mx-auto">
-                <div className="w-full max-w-2xl flex flex-col gap-16">
+            <section id="waitlist-section" className="relative min-h-screen w-full snap-start flex flex-col px-8 bg-brand-beige text-brand-dark max-w-7xl mx-auto">
+                <div className="flex-1 flex flex-col justify-center py-20 w-full">
+                    <div className="w-full max-w-2xl flex flex-col gap-16">
 
-                    {/* What Align Is */}
-                    <div className="flex flex-col gap-6">
-                        <h2 className="text-4xl md:text-5xl font-medium mb-4">
-                            What Align Is
-                        </h2>
-                        <div className="flex flex-col gap-4 text-xl md:text-2xl font-light text-brand-dark/80">
-                            <p>Not a job board.</p>
-                            <p>Not a fast-hiring platform.</p>
-                            <p>
-                                A calm system that helps students and founders
-                                <br />
-                                clarify intent <span className="font-medium text-brand-dark">before</span> hiring conversations begin.
-                            </p>
-                            <p>
-                                Designed to reduce noise early —
-                                <br />
-                                so conversations happen only when they matter.
+                        {/* What Align Is */}
+                        <div className="flex flex-col gap-6">
+                            <h2 className="text-4xl md:text-5xl font-medium mb-4">
+                                What Align Is
+                            </h2>
+                            <div className="flex flex-col gap-4 text-xl md:text-2xl font-light text-brand-dark/80">
+                                <p>Not a job board.</p>
+                                <p>Not a fast-hiring platform.</p>
+                                <p>
+                                    A calm system that helps students and founders
+                                    <br />
+                                    clarify intent <span className="font-medium text-brand-dark">before</span> hiring conversations begin.
+                                </p>
+                                <p>
+                                    Designed to reduce noise early —
+                                    <br />
+                                    so conversations happen only when they matter.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Waitlist Form Block */}
+                        <div className="flex flex-col gap-6">
+                            <h3 className="text-2xl md:text-3xl font-medium">
+                                Join the Waitlist
+                            </h3>
+
+                            <WaitlistForm withInput={true} />
+
+                            <p className="text-xs text-brand-dark/50 mt-2">
+                                No Spam. No pressure. Updates only when the product is ready.
                             </p>
                         </div>
                     </div>
-
-                    {/* Waitlist Form Block */}
-                    <div className="flex flex-col gap-6">
-                        <h3 className="text-2xl md:text-3xl font-medium">
-                            Join the Waitlist
-                        </h3>
-
-                        <WaitlistForm withInput={true} />
-
-                        <p className="text-xs text-brand-dark/50 mt-2">
-                            No Spam. No pressure. Updates only when the product is ready.
-                        </p>
-                    </div>
-
                 </div>
 
                 {/* Footer */}
-                <div className="absolute bottom-10 left-0 w-full px-8">
+                <div className="w-full pb-10 mt-auto">
                     <div className="max-w-7xl mx-auto border-t border-brand-dark/10 pt-8 text-sm text-brand-dark/40 font-light">
                         Built Slowly. © Align
                     </div>
